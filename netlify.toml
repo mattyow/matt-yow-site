@@ -1,0 +1,6 @@
+[build]
+  command = "npm run build"
+  publish = ".next"
+
+# Netlify auto-installs @netlify/plugin-nextjs for Next.js projects.
+# No additional configuration needed for standard SSR/SSG.

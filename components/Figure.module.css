@@ -1,0 +1,26 @@
+.figure {
+  margin: 64px 0;
+}
+.figure img {
+  width: 100%;
+  height: auto;
+}
+.figure figcaption {
+  margin-top: 10px;
+}
+
+/* Column-width figure: stays within text column */
+.size_col {
+  max-width: 760px;
+}
+
+/* Wide: stretches beyond the text column */
+.size_wide {
+  max-width: 1200px;
+}
+
+/* Bleed: edge to edge (relative to the page container) */
+.size_bleed {
+  max-width: none;
+  width: 100%;
+}

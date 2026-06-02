@@ -1,0 +1,66 @@
+.article {
+  padding: 48px clamp(24px, 12vw, 200px) 64px;
+  max-width: 1400px;
+}
+
+.crumbsRow {
+  margin-bottom: 48px;
+}
+
+.hero {
+  padding-bottom: 80px;
+}
+.hero :global(.h1) {
+  margin-bottom: 56px;
+}
+
+.meta {
+  display: grid;
+  gap: 4px;
+}
+.row {
+  font-family: "Umiak Mono", ui-monospace, monospace;
+  font-size: 14px;
+  line-height: 160%;
+}
+.k {
+  display: inline-block;
+  min-width: 9ch;
+}
+
+.body {
+  max-width: 760px;
+}
+
+/* Body paragraphs use first-line indent, except the first per section (.lead). */
+.body :global(p) {
+  font-family: "Heldane Text", Georgia, serif;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 160%;
+  margin: 0;
+  text-indent: 2em;
+  font-variant-numeric: oldstyle-nums;
+}
+.body :global(p.lead) {
+  text-indent: 0;
+}
+/* Section heads inside MDX body */
+.body :global(h2) {
+  font-family: "Figure Extended", sans-serif;
+  font-weight: 500;
+  font-size: 36px;
+  line-height: 120%;
+  letter-spacing: 0;
+  font-feature-settings: "ss02";
+  margin: 64px 0 24px 0;
+}
+.body :global(h3) {
+  font-family: "Figure Extended", sans-serif;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 120%;
+  letter-spacing: 0;
+  font-feature-settings: "ss02";
+  margin: 64px 0 24px 0;
+}

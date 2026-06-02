@@ -1,0 +1,46 @@
+.crumbs {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+
+.row {
+  display: inline-flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.pill {
+  display: inline-flex;
+  align-items: center;
+  padding: 8px 16px;
+  border: 1px solid var(--ink);
+  border-radius: 999px;
+  text-decoration: none;
+  font-family: "Figure Extended", sans-serif;
+  font-weight: 500;
+  font-size: 13px;
+  text-transform: uppercase;
+  letter-spacing: 0.03em;
+  line-height: 1;
+  color: var(--ink);
+  background: transparent;
+  transition: background 0.15s ease;
+  cursor: pointer;
+}
+.pill:hover,
+.pill[aria-current="page"] {
+  background: var(--soft);
+  color: var(--ink);
+}
+
+.sep {
+  font-family: "Figure Extended", sans-serif;
+  font-weight: 500;
+  font-size: 13px;
+  text-transform: uppercase;
+  letter-spacing: 0.03em;
+  line-height: 1;
+  color: var(--ink);
+}
