@@ -82,3 +82,15 @@
   flex-shrink: 0;
   color: var(--ink);
 }
+/* Hide labels when closed, fade them in after panel opens */
+.toggle > span,
+.item > span {
+  opacity: 0;
+  transition: opacity 0.15s ease;
+}
+
+.sidebar[data-state="open"] .toggle > span,
+.sidebar[data-state="open"] .item > span {
+  opacity: 1;
+  transition-delay: 0.18s;
+}
