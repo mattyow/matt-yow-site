@@ -68,7 +68,6 @@
 .sidebar[data-state="open"] .item:hover {
   opacity: 0.6;
 }
-}
 .item[data-active="true"] {
   font-weight: 500;
 }
