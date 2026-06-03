@@ -9,7 +9,6 @@ const navItems = [
   { href: "/", label: "Index", icon: IconIndex },
   { href: "/work", label: "Case Studies", icon: IconCase },
   { href: "/archive", label: "Archive", icon: IconArchive },
-  { href: "/books", label: "Book List", icon: IconBook },
   { href: "/writing", label: "Writing", icon: IconWriting },
 ];
 
@@ -41,12 +40,13 @@ export default function Sidebar() {
           const isActive =
             href === "/" ? pathname === "/" : pathname.startsWith(href);
           return (
-            <Link
-              key={href}
-              href={href}
-              className={styles.item}
-              data-active={isActive ? "true" : undefined}
-            >
+<Link
+  key={href}
+  href={href}
+  className={styles.item}
+  data-label={label}
+  data-active={isActive ? "true" : undefined}
+>
               <Icon />
               <span>{label}</span>
             </Link>
