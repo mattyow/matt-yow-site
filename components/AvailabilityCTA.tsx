@@ -1,17 +1,13 @@
 import styles from "./AvailabilityCTA.module.css";
 
-export default function AvailabilityCTA({
-  email = "hello@mattyow.com",
-}: {
-  email?: string;
-}) {
+export default function AvailabilityCTA() {
   return (
     <div className={styles.cta}>
       <span className={styles.dot} aria-hidden="true" />
       <span className={styles.text}>
         I am available for contract work — or say hello!
       </span>
-      <a href={`mailto:${hello@mattyow.com}`} className={styles.pill}>
+      <a href="mailto:hello@mattyow.com" className={styles.pill}>
         Email Me
       </a>
     </div>
