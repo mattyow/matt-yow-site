@@ -11,7 +11,7 @@ export default function AvailabilityCTA({
       <span className={styles.text}>
         I am available for contract work — or say hello!
       </span>
-      <a href={`mailto:${email}`} className={styles.pill}>
+      <a href={`mailto:${hello@mattyow.com}`} className={styles.pill}>
         Email Me
       </a>
     </div>
