@@ -55,4 +55,95 @@ export default function HomePage() {
           <h1 className="h1">Hello</h1>
           <h2 className={styles.subtitle}>My name is Matt Yow</h2>
 
-          <div classN
+          <div className={styles.bio}>
+            <p>
+              With over 15 years of experience, I&rsquo;ve integrated with teams
+              of all sizes — from startups to publicly traded companies, from
+              internal teams to an array of contractors. My focus is on core
+              brand design systems with a deep regard to powerful brand
+              strategy.
+            </p>
+            <p>
+              Currently I am <em>Staff Brand Designer</em> at Netlify.
+            </p>
+            <p>I live in Richmond, Virginia.</p>
+            <p>
+              Take a look at{" "}
+              <a href="#" className={styles.link}>
+                my home library
+              </a>{" "}
+              minisite.
+            </p>
+          </div>
+
+          <div className={styles.ctaWrap}>
+            <AvailabilityCTA />
+          </div>
+        </div>
+
+        <div className={styles.portrait}>
+          {/* Drop the photo at /public/images/matt-portrait.jpg */}
+          {/* eslint-disable-next-line @next/next/no-img-element */}
+          <img src="/images/matt-portrait.jpg" alt="Matt Yow" />
+        </div>
+      </section>
+
+      <section className={styles.twoCol}>
+        <div>
+          <h2 className={styles.sectionHeading}>Experience</h2>
+          <ul className={styles.list}>
+            {EXPERIENCE.map((job, i) => (
+              <li key={i} className={styles.listItem}>
+                <div>
+                  {job.company}, {job.dates}
+                </div>
+                <div className={styles.italic}>{job.role}</div>
+              </li>
+            ))}
+            <li className={`${styles.listItem} ${styles.education}`}>
+              <div>
+                {EDUCATION.company}, {EDUCATION.dates}
+              </div>
+              <div className={styles.italic}>{EDUCATION.role}</div>
+            </li>
+          </ul>
+        </div>
+
+        <div>
+          <h2 className={styles.sectionHeading}>Clients &amp; Collaborators</h2>
+          <ul className={styles.list}>
+            {CLIENTS.map((client, i) => (
+              <li key={i} className={styles.simpleItem}>
+                {client}
+              </li>
+            ))}
+          </ul>
+        </div>
+      </section>
+
+      <section className={styles.twoCol}>
+        <div>
+          <h2 className={styles.sectionHeading}>Elsewhere</h2>
+          <ul className={styles.list}>
+            {SOCIAL.map((s, i) => (
+              <li key={i} className={styles.simpleItem}>
+                <a href={s.href} className={styles.link}>
+                  {s.label}
+                </a>
+              </li>
+            ))}
+          </ul>
+        </div>
+
+        <div>
+          <h2 className={styles.sectionHeading}>Colophon</h2>
+          <p className={styles.colophonBody}>
+            Typography: Figure by Fort Foundry, Heldane Text by Klim Type
+            Foundry, and Umiak Mono by East of Rome. Deployed from GitHub with
+            Next.js, hosted on Netlify.
+          </p>
+        </div>
+      </section>
+    </div>
+  );
+}
