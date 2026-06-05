@@ -1,0 +1,43 @@
+.cta {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 12px;
+  font-family: "Heldane Text", Georgia, serif;
+  font-size: 18px;
+  line-height: 160%;
+}
+
+.dot {
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background: #10b981;
+  flex-shrink: 0;
+}
+
+.text {
+  font-variant-numeric: oldstyle-nums;
+}
+
+.pill {
+  display: inline-flex;
+  align-items: center;
+  padding: 8px 16px;
+  border: 1px solid var(--ink);
+  border-radius: 999px;
+  text-decoration: none;
+  font-family: "Figure Extended", sans-serif;
+  font-weight: 500;
+  font-size: 13px;
+  text-transform: uppercase;
+  letter-spacing: 0.03em;
+  line-height: 1;
+  color: var(--ink);
+  background: transparent;
+  transition: background 0.15s ease;
+}
+.pill:hover {
+  background: var(--soft);
+}
