@@ -1,48 +1,64 @@
-.page {
-  padding: 64px clamp(32px, 6vw, 96px) 64px;
-  max-width: 1280px;
+.article {
+  padding: 48px clamp(24px, 12vw, 200px) 64px;
+  max-width: 1400px;
 }
 
-.eyebrow {
+.crumbsRow {
+  margin-bottom: 48px;
+}
+
+.hero {
+  padding-bottom: 80px;
+}
+.hero :global(.h1) {
+  margin-bottom: 56px;
+}
+
+.meta {
+  display: grid;
+  gap: 4px;
+}
+.row {
   font-family: "Umiak Mono", ui-monospace, monospace;
-  font-weight: 400;
   font-size: 14px;
   line-height: 160%;
-  margin: 0 0 64px 0;
+}
+.k {
+  display: inline-block;
+  min-width: 9ch;
 }
 
-.list {
-  list-style: none;
-  padding: 0;
-  margin: 0 0 64px 0;
-  border-top: 1px solid var(--ink);
+.body {
+  max-width: 760px;
 }
 
-.row {
-  display: flex;
-  justify-content: space-between;
-  align-items: baseline;
-  padding: 12px 16px;
-  border-bottom: 1px solid var(--ink);
-  text-decoration: none;
-  color: var(--ink);
-  transition: background 0.12s ease;
-}
-.row:hover {
-  background: var(--soft);
-}
-
-.title {
+.body :global(p) {
   font-family: "Heldane Text", Georgia, serif;
   font-weight: 400;
   font-size: 18px;
   line-height: 160%;
+  margin: 0;
+  text-indent: 2em;
   font-variant-numeric: oldstyle-nums;
 }
-
-.year {
-  font-family: "Umiak Mono", ui-monospace, monospace;
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 160%;
+.body :global(p.lead) {
+  text-indent: 0;
+}
+.body :global(h2) {
+  font-family: "Figure Extended", sans-serif;
+  font-weight: 500;
+  font-size: 36px;
+  line-height: 120%;
+  letter-spacing: 0;
+  font-feature-settings: "ss02";
+  margin: 64px 0 24px 0;
+}
+.body :global(h3) {
+  font-family: "Figure Extended", sans-serif;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 120%;
+  letter-spacing: 0;
+  font-feature-settings: "ss02";
+  margin: 64px 0 24px 0;
 }
