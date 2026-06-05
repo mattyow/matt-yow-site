@@ -20,14 +20,27 @@ export default function RootLayout({
     <html lang="en">
       <body>
         <Sidebar />
-        <main
+        <div
           style={{
             marginLeft: "var(--sb-closed)",
             minHeight: "100vh",
+            display: "flex",
+            flexDirection: "column",
           }}
         >
-          {children}
-        </main>
+          <main style={{ flex: 1 }}>{children}</main>
+          <footer
+            style={{
+              padding: "32px clamp(32px, 6vw, 96px)",
+              fontFamily: '"Umiak Mono", ui-monospace, monospace',
+              fontSize: 14,
+              lineHeight: 1.6,
+              borderTop: "1px solid var(--ink)",
+            }}
+          >
+            © 2026. Matt Yow
+          </footer>
+        </div>
       </body>
     </html>
   );
