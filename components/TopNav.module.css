@@ -1,0 +1,44 @@
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 32px clamp(32px, 6vw, 96px);
+  gap: 24px;
+}
+
+.wordmark {
+  font-family: "Heldane Text", Georgia, serif;
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 1;
+  color: var(--ink);
+  text-decoration: none;
+  font-variant-numeric: oldstyle-nums;
+}
+
+.nav {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+
+.pill {
+  display: inline-flex;
+  align-items: center;
+  padding: 8px 18px;
+  border: 1px solid var(--ink);
+  border-radius: 999px;
+  font-family: "Heldane Text", Georgia, serif;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 1;
+  color: var(--ink);
+  background: transparent;
+  text-decoration: none;
+  transition: background 0.15s ease;
+  font-variant-numeric: oldstyle-nums;
+}
+.pill:hover {
+  background: var(--soft);
+}
