@@ -16,6 +16,7 @@ const mdxComponents = {
   Figure,
   TwoUp,
   PullQuote,
+  Press,
 };
 
 export function generateStaticParams() {
