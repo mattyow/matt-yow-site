@@ -1,0 +1,60 @@
+.page {
+  padding: 32px clamp(32px, 6vw, 96px) 96px;
+  max-width: 1280px;
+}
+
+.eyebrow {
+  font-family: "Umiak Mono", ui-monospace, monospace;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 160%;
+  margin: 0 0 24px 0;
+}
+
+.intro {
+  font-family: "Heldane Text", Georgia, serif;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 160%;
+  max-width: 44ch;
+  margin: 0 0 64px 0;
+  font-variant-numeric: oldstyle-nums;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 24px;
+  margin-bottom: 48px;
+}
+
+.archiveLinkRow {
+  margin-bottom: 64px;
+}
+
+.archivePill {
+  display: inline-flex;
+  align-items: center;
+  padding: 10px 18px;
+  border: 1px solid var(--ink);
+  border-radius: 999px;
+  text-decoration: none;
+  font-family: "Figure Extended", sans-serif;
+  font-weight: 500;
+  font-size: 13px;
+  text-transform: uppercase;
+  letter-spacing: 0.03em;
+  line-height: 1;
+  color: var(--ink);
+  background: transparent;
+  transition: background 0.15s ease;
+}
+.archivePill:hover {
+  background: var(--soft);
+}
+
+@media (max-width: 700px) {
+  .grid {
+    grid-template-columns: 1fr;
+  }
+}
