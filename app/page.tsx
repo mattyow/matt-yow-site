@@ -84,7 +84,7 @@ export default function HomePage() {
         <div className={styles.portrait}>
           {/* Drop the photo at /public/images/matt-portrait.jpg */}
           {/* eslint-disable-next-line @next/next/no-img-element */}
-          <img src="/images/matt-portrait.jpg" alt="Matt Yow" />
+          <img src="/images/matt_yow_logo.svg" alt="Matt Yow" />
         </div>
       </section>
 
