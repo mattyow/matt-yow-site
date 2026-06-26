@@ -1,43 +1,43 @@
 import Link from "next/link";
+import AvailabilityCTA from "@/components/AvailabilityCTA";
+import CaseStudyCard from "@/components/CaseStudyCard";
 import { getAllCaseStudies } from "@/lib/case-studies";
+import styles from "./page.module.css";
 
-export const metadata = { title: "Case Studies" };
+export const metadata = { title: "Projects" };
 
 export default function WorkIndex() {
   const studies = getAllCaseStudies();
 
   return (
-    <div style={{ padding: "80px clamp(24px, 6vw, 96px)" }}>
-      <h2 className="h2" style={{ marginBottom: 48 }}>
-        Case Studies
-      </h2>
-      <ul style={{ listStyle: "none", padding: 0, margin: 0 }}>
+    <div className={styles.page}>
+      <p className={styles.eyebrow}>Projects</p>
+
+      <p className={styles.intro}>
+        With over 15 years of experience, I&rsquo;ve integrated with teams of all
+        sizes — from startups to publicly traded companies, from internal teams
+        to an array of contractors. My focus is on core brand design systems
+        with a deep regard to powerful brand strategy.
+      </p>
+
+      <div className={styles.grid}>
         {studies.map((cs) => (
-          <li
+          <CaseStudyCard
             key={cs.slug}
-            style={{
-              borderTop: "1px solid var(--ink)",
-              padding: "24px 0",
-            }}
-          >
-            <Link
-              href={`/work/${cs.slug}`}
-              style={{ textDecoration: "none" }}
-            >
-              <h3 className="h3">{cs.title}</h3>
-              {cs.blurb && (
-                <p style={{ marginTop: 8, maxWidth: "60ch" }}>{cs.blurb}</p>
-              )}
-              <p
-                className="caption"
-                style={{ marginTop: 8 }}
-              >
-                {cs.year} · {cs.agency}
-              </p>
-            </Link>
-          </li>
+            slug={cs.slug}
+            title={cs.title}
+            cover={cs.cover}
+          />
         ))}
-      </ul>
+      </div>
+
+      <div className={styles.archiveLinkRow}>
+        <Link href="/archive" className={styles.archivePill}>
+          View Full Archive
+        </Link>
+      </div>
+
+      <AvailabilityCTA />
     </div>
   );
 }
