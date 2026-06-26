@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import Sidebar from "@/components/Sidebar";
+import TopNav from "@/components/TopNav";
 import "./globals.css";
 
 export const metadata: Metadata = {
@@ -19,15 +19,14 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body>
-        <Sidebar />
         <div
           style={{
-            marginLeft: "var(--sb-closed)",
             minHeight: "100vh",
             display: "flex",
             flexDirection: "column",
           }}
         >
+          <TopNav />
           <main style={{ flex: 1 }}>{children}</main>
           <footer
             style={{
