@@ -1,4 +1,3 @@
-import Link from "next/link";
 import AvailabilityCTA from "@/components/AvailabilityCTA";
 import styles from "./page.module.css";
 
@@ -20,20 +19,9 @@ const EDUCATION = {
 };
 
 const CLIENTS = [
-  "Adobe",
-  "Apple",
-  "BambooHR",
-  "Chick-fil-A",
-  "Hewlett-Packard",
-  "Intercom",
-  "Lyft",
-  "Microsoft",
-  "Monotype",
-  "Red Antler",
-  "SCAD",
-  "SeatGeek",
-  "Tiny Wins",
-  "Treehouse",
+  "Adobe", "Apple", "BambooHR", "Chick-fil-A", "Hewlett-Packard",
+  "Intercom", "Lyft", "Microsoft", "Monotype", "Red Antler",
+  "SCAD", "SeatGeek", "Tiny Wins", "Treehouse",
   "University of California Berkeley",
 ];
 
@@ -48,12 +36,10 @@ const SOCIAL = [
 export default function HomePage() {
   return (
     <div className={styles.page}>
-      <p className={styles.eyebrow}>Index</p>
-
       <section className={styles.hero}>
         <div className={styles.heroText}>
+          <p className={styles.eyebrow}>Index</p>
           <h1 className="h1">Hello</h1>
-          <h2 className={styles.subtitle}>My name is Matt Yow</h2>
 
           <div className={styles.bio}>
             <p>
@@ -81,10 +67,10 @@ export default function HomePage() {
           </div>
         </div>
 
-        <div className={styles.portrait}>
-          {/* Drop the photo at /public/images/matt-portrait.jpg */}
+        <div className={styles.graphic}>
+          {/* Drop a graphic at /public/images/matt-icon.svg */}
           {/* eslint-disable-next-line @next/next/no-img-element */}
-          <img src="/images/matt_yow_logo.svg" alt="Matt Yow" />
+          <img src="/images/matt-icon.svg" alt="" />
         </div>
       </section>
 
@@ -94,16 +80,12 @@ export default function HomePage() {
           <ul className={styles.list}>
             {EXPERIENCE.map((job, i) => (
               <li key={i} className={styles.listItem}>
-                <div>
-                  {job.company}, {job.dates}
-                </div>
+                <div>{job.company}, {job.dates}</div>
                 <div className={styles.italic}>{job.role}</div>
               </li>
             ))}
             <li className={`${styles.listItem} ${styles.education}`}>
-              <div>
-                {EDUCATION.company}, {EDUCATION.dates}
-              </div>
+              <div>{EDUCATION.company}, {EDUCATION.dates}</div>
               <div className={styles.italic}>{EDUCATION.role}</div>
             </li>
           </ul>
@@ -113,9 +95,7 @@ export default function HomePage() {
           <h2 className={styles.sectionHeading}>Clients &amp; Collaborators</h2>
           <ul className={styles.list}>
             {CLIENTS.map((client, i) => (
-              <li key={i} className={styles.simpleItem}>
-                {client}
-              </li>
+              <li key={i} className={styles.simpleItem}>{client}</li>
             ))}
           </ul>
         </div>
@@ -127,9 +107,7 @@ export default function HomePage() {
           <ul className={styles.list}>
             {SOCIAL.map((s, i) => (
               <li key={i} className={styles.simpleItem}>
-                <a href={s.href} className={styles.link}>
-                  {s.label}
-                </a>
+                <a href={s.href} className={styles.link}>{s.label}</a>
               </li>
             ))}
           </ul>
