@@ -70,7 +70,7 @@ export default function HomePage() {
         <div className={styles.graphic}>
           {/* Drop a graphic at /public/images/matt-icon.svg */}
           {/* eslint-disable-next-line @next/next/no-img-element */}
-          <img src="/images/matt-icon.svg" alt="" />
+          <img src="/images/matt_yow_logo.svg" alt="" />
         </div>
       </section>
 
