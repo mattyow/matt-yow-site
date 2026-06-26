@@ -4,6 +4,7 @@ import Crumbs from "@/components/Crumbs";
 import Figure from "@/components/Figure";
 import TwoUp from "@/components/TwoUp";
 import PullQuote from "@/components/PullQuote";
+import Press from "@/components/Press";
 import BackPill from "@/components/BackPill";
 import {
   getAllSlugs,
