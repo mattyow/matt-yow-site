@@ -28,16 +28,18 @@ export default function RootLayout({
         >
           <TopNav />
           <main style={{ flex: 1 }}>{children}</main>
-          <footer
-            style={{
-              padding: "32px clamp(32px, 6vw, 96px)",
-              fontFamily: '"Umiak Mono", ui-monospace, monospace',
-              fontSize: 14,
-              lineHeight: 1.6,
-              borderTop: "1px solid var(--ink)",
-            }}
-          >
-            © 2026. Matt Yow
+          <footer style={{ padding: "0 clamp(32px, 6vw, 96px)" }}>
+            <div
+              style={{
+                borderTop: "1px solid var(--ink)",
+                padding: "32px 0",
+                fontFamily: '"Umiak Mono", ui-monospace, monospace',
+                fontSize: 14,
+                lineHeight: 1.6,
+              }}
+            >
+              © 2026. Matt Yow
+            </div>
           </footer>
         </div>
       </body>
