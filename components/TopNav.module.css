@@ -38,6 +38,10 @@
   text-decoration: none;
   transition: background 0.15s ease;
   font-variant-numeric: oldstyle-nums;
+  cursor: pointer;
+  appearance: none;
+  -webkit-appearance: none;
+  margin: 0;
 }
 .pill:hover {
   background: var(--soft);
