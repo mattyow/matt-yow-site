@@ -14,7 +14,7 @@ const EXPERIENCE = [
 
 const EDUCATION = {
   company: "Savannah College of Art and Design",
-  dates: "2015",
+  dates: "2013",
   role: "Bachelor's of Fine Arts, Graphic Design",
 };
 
@@ -123,9 +123,9 @@ export default function HomePage() {
         <div>
           <h2 className={styles.sectionHeading}>Colophon</h2>
           <p className={styles.colophonBody}>
-            Typography: Figure by Fort Foundry, Heldane Text by Klim Type
+            Typography: Paraiso by Plain Form, Figure by Fort Foundry, Heldane Text by Klim Type
             Foundry, and Umiak Mono by East of Rome. Deployed from GitHub with
-            Next.js, hosted on Netlify.
+            Next.js, and hosted on Netlify.
           </p>
         </div>
       </section>
