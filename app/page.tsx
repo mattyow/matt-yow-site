@@ -26,11 +26,11 @@ const CLIENTS = [
 ];
 
 const SOCIAL = [
-  { label: "LinkedIn", href: "#" },
-  { label: "Twitter", href: "#" },
-  { label: "Dribbble", href: "#" },
-  { label: "Instagram", href: "#" },
-  { label: "Substack", href: "#" },
+  { label: "LinkedIn", href: "https://www.linkedin.com/in/mattyow/" },
+  { label: "Twitter", href: "https://x.com/matt_yow" },
+  { label: "Dribbble", href: "https://dribbble.com/matt_yow" },
+  { label: "Instagram", href: "https://www.instagram.com/matt_yow/" },
+  { label: "Substack", href: "https://mattyow.substack.com/" },
 ];
 
 export default function HomePage() {
