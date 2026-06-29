@@ -7,13 +7,14 @@
 }
 
 .wordmark {
-  font-family: "Heldane Text", Georgia, serif;
-  font-weight: 400;
+  font-family: "Figure Extended", sans-serif;
+  font-weight: 500;
   font-size: 22px;
-  line-height: 1;
+  line-height: 120%;
+  letter-spacing: 0;
+  font-feature-settings: "ss02";
   color: var(--ink);
   text-decoration: none;
-  font-variant-numeric: oldstyle-nums;
 }
 
 .nav {
