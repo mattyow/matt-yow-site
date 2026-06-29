@@ -38,12 +38,9 @@
   font-size: 18px;
   line-height: 160%;
   margin: 0;
-  text-indent: 2em;
   font-variant-numeric: oldstyle-nums;
 }
-.body :global(p.lead) {
-  text-indent: 0;
-}
+
 .body :global(h2) {
   font-family: "Figure Extended", sans-serif;
   font-weight: 500;
