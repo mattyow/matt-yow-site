@@ -41,9 +41,7 @@
   margin: 0;
   font-variant-numeric: oldstyle-nums;
 }
-.body :global(p.lead) {
-  text-indent: 0;
-}
+
 /* Section heads inside MDX body */
 .body :global(h2) {
   font-family: "Figure Extended", sans-serif;
