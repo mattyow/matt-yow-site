@@ -1,3 +1,4 @@
+import CopyEmailPill from "./CopyEmailPill";
 import styles from "./AvailabilityCTA.module.css";
 
 export default function AvailabilityCTA() {
@@ -7,9 +8,7 @@ export default function AvailabilityCTA() {
       <span className={styles.text}>
         I am available for contract work — or say hello!
       </span>
-      <a href="mailto:hello@mattyow.com" className={styles.pill}>
-        Email Me
-      </a>
+      <CopyEmailPill defaultLabel="Email me" className={styles.pill} />
     </div>
   );
 }
