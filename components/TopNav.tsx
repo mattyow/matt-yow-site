@@ -1,10 +1,10 @@
 import Link from "next/link";
+import CopyEmailPill from "./CopyEmailPill";
 import styles from "./TopNav.module.css";
 
 const NAV = [
   { label: "Info", href: "/" },
   { label: "Projects", href: "/work" },
-  { label: "Contact", href: "mailto:hello@mattyow.com" },
 ];
 
 export default function TopNav() {
@@ -14,17 +14,12 @@ export default function TopNav() {
         Matt Yow
       </Link>
       <nav className={styles.nav} aria-label="Primary">
-        {NAV.map(({ label, href }) =>
-          href.startsWith("mailto:") ? (
-            <a key={label} href={href} className={styles.pill}>
-              {label}
-            </a>
-          ) : (
-            <Link key={label} href={href} className={styles.pill}>
-              {label}
-            </Link>
-          )
-        )}
+        {NAV.map(({ label, href }) => (
+          <Link key={label} href={href} className={styles.pill}>
+            {label}
+          </Link>
+        ))}
+        <CopyEmailPill defaultLabel="Contact" className={styles.pill} />
       </nav>
     </header>
   );
