@@ -102,21 +102,21 @@ export default function HomePage() {
       </section>
 
       <section className={styles.twoCol}>
-        <div>
+<div>
           <h2 className={styles.sectionHeading}>Elsewhere</h2>
           <ul className={styles.list}>
-{SOCIAL.map((s, i) => (
-  <li key={i} className={styles.simpleItem}>
-    
-      href={s.href}
-      className={styles.link}
-      target="_blank"
-      rel="noopener noreferrer"
-    >
-      {s.label}
-    </a>
-  </li>
-))}
+            {SOCIAL.map((s, i) => (
+              <li key={i} className={styles.simpleItem}>
+                
+                  href={s.href}
+                  className={styles.link}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  {s.label}
+                </a>
+              </li>
+            ))}
           </ul>
         </div>
 
