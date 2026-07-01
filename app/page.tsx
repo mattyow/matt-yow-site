@@ -14,7 +14,7 @@ const EXPERIENCE = [
 
 const EDUCATION = {
   company: "Savannah College of Art and Design",
-  dates: "2013",
+  dates: "2015",
   role: "Bachelor's of Fine Arts, Graphic Design",
 };
 
@@ -54,81 +54,4 @@ export default function HomePage() {
             </p>
             <p>I live in Richmond, Virginia.</p>
             <p>
-              Take a look at{" "}
-              <a href="#" className={styles.link}>
-                my home library
-              </a>{" "}
-              minisite.
-            </p>
-          </div>
-
-          <div className={styles.ctaWrap}>
-            <AvailabilityCTA />
-          </div>
-        </div>
-
-        <div className={styles.graphic}>
-          {/* Drop a graphic at /public/images/matt-icon.svg */}
-          {/* eslint-disable-next-line @next/next/no-img-element */}
-          <img src="/images/matt_yow_logo.svg" alt="" />
-        </div>
-      </section>
-
-      <section className={styles.twoCol}>
-        <div>
-          <h2 className={styles.sectionHeading}>Experience</h2>
-          <ul className={styles.list}>
-            {EXPERIENCE.map((job, i) => (
-              <li key={i} className={styles.listItem}>
-                <div>{job.company}, {job.dates}</div>
-                <div className={styles.italic}>{job.role}</div>
-              </li>
-            ))}
-            <li className={`${styles.listItem} ${styles.education}`}>
-              <div>{EDUCATION.company}, {EDUCATION.dates}</div>
-              <div className={styles.italic}>{EDUCATION.role}</div>
-            </li>
-          </ul>
-        </div>
-
-        <div>
-          <h2 className={styles.sectionHeading}>Clients &amp; Collaborators</h2>
-          <ul className={styles.list}>
-            {CLIENTS.map((client, i) => (
-              <li key={i} className={styles.simpleItem}>{client}</li>
-            ))}
-          </ul>
-        </div>
-      </section>
-
-      <section className={styles.twoCol}>
-<div>
-          <h2 className={styles.sectionHeading}>Elsewhere</h2>
-          <ul className={styles.list}>
-            {SOCIAL.map((s, i) => (
-              <li key={i} className={styles.simpleItem}>
-                
-                  href={s.href}
-                  className={styles.link}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  {s.label}
-                </a>
-              </li>
-            ))}
-          </ul>
-        </div>
-
-        <div>
-          <h2 className={styles.sectionHeading}>Colophon</h2>
-          <p className={styles.colophonBody}>
-            Typography: Paraiso by Plain Form, Figure by Fort Foundry, Heldane Text by Klim Type
-            Foundry, and Umiak Mono by East of Rome. Deployed from GitHub with
-            Next.js, and hosted on Netlify.
-          </p>
-        </div>
-      </section>
-    </div>
-  );
-}
+              Take a look
