@@ -3,7 +3,7 @@
 }
 
 .eyebrow {
-  font-family: "Umiak Mono", ui-monospace, monospace;
+  font-family: "Triptych Roman", Georgia, serif;
   font-weight: 400;
   font-size: 14px;
   line-height: 160%;
@@ -28,7 +28,7 @@
 }
 
 .bio p {
-  font-family: "Heldane Text", Georgia, serif;
+  font-family: "Triptych Roman", Georgia, serif;
   font-weight: 400;
   font-size: 18px;
   line-height: 160%;
@@ -71,7 +71,7 @@
 }
 
 .sectionHeading {
-  font-family: "Figure Extended", sans-serif;
+  font-family: "Triptych Grotesque", sans-serif;
   font-weight: 500;
   font-size: 36px;
   line-height: 120%;
@@ -87,7 +87,7 @@
 }
 
 .listItem {
-  font-family: "Heldane Text", Georgia, serif;
+  font-family: "Triptych Roman", Georgia, serif;
   font-weight: 400;
   font-size: 18px;
   line-height: 160%;
@@ -104,7 +104,7 @@
 }
 
 .simpleItem {
-  font-family: "Heldane Text", Georgia, serif;
+  font-family: "Triptych Roman", Georgia, serif;
   font-weight: 400;
   font-size: 18px;
   line-height: 160%;
@@ -113,7 +113,7 @@
 }
 
 .colophonBody {
-  font-family: "Heldane Text", Georgia, serif;
+  font-family: "Triptych Roman", Georgia, serif;
   font-weight: 400;
   font-size: 18px;
   line-height: 160%;
