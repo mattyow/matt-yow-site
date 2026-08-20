@@ -3,7 +3,7 @@
   align-items: center;
   flex-wrap: wrap;
   gap: 12px;
-  font-family: "Heldane Text", Georgia, serif;
+  font-family: "Triptych Roman", Georgia, serif;
   font-size: 18px;
   line-height: 160%;
 }
@@ -27,7 +27,7 @@
   padding: 8px 18px;
   border: 1px solid var(--ink);
   border-radius: 999px;
-  font-family: "Heldane Text", Georgia, serif;
+  font-family: "Triptych Roman", Georgia, serif;
   font-weight: 400;
   font-size: 15px;
   line-height: 1;

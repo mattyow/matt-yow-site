@@ -7,7 +7,7 @@
 }
 
 .wordmark {
-  font-family: "Figure Extended", sans-serif;
+  font-family: "Triptych Grotesque", sans-serif;
   font-weight: 500;
   font-size: 22px;
   line-height: 120%;
@@ -30,7 +30,7 @@
   padding: 8px 18px;
   border: 1px solid var(--ink);
   border-radius: 999px;
-  font-family: "Heldane Text", Georgia, serif;
+  font-family: "Triptych Roman", Georgia, serif;
   font-weight: 400;
   font-size: 15px;
   line-height: 1;

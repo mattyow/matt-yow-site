@@ -3,7 +3,7 @@
 }
 
 .heading {
-  font-family: "Figure Extended", sans-serif;
+  font-family: "Triptych Grotesque", sans-serif;
   font-weight: 500;
   font-size: 36px;
   line-height: 120%;
@@ -19,7 +19,7 @@
 }
 
 .list :global(li) {
-  font-family: "Heldane Text", Georgia, serif;
+  font-family: "Triptych Roman", Georgia, serif;
   font-weight: 400;
   font-size: 18px;
   line-height: 160%;

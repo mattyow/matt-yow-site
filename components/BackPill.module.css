@@ -11,7 +11,7 @@
   border: 1px solid var(--ink);
   border-radius: 999px;
   text-decoration: none;
-  font-family: "Figure Extended", sans-serif;
+  font-family: "Triptych Grotesque", sans-serif;
   font-weight: 500;
   font-size: 13px;
   text-transform: uppercase;
@@ -25,7 +25,7 @@
   background: var(--soft);
 }
 .sep {
-  font-family: "Figure Extended", sans-serif;
+  font-family: "Triptych Grotesque", sans-serif;
   font-weight: 500;
   font-size: 13px;
   text-transform: uppercase;
