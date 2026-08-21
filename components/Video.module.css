@@ -1,0 +1,22 @@
+.figure {
+  margin: 64px 0;
+}
+.video {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+.figure figcaption {
+  margin-top: 10px;
+}
+
+.size_col {
+  max-width: 520px;
+}
+.size_wide {
+  max-width: 1200px;
+}
+.size_bleed {
+  max-width: none;
+  width: 100%;
+}

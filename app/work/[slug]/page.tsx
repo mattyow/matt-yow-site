@@ -4,6 +4,7 @@ import Figure from "@/components/Figure";
 import TwoUp from "@/components/TwoUp";
 import PullQuote from "@/components/PullQuote";
 import Press from "@/components/Press";
+import Video from "@/components/Video";
 import AvailabilityCTA from "@/components/AvailabilityCTA";
 import {
   getAllSlugs,
@@ -16,6 +17,7 @@ const mdxComponents = {
   TwoUp,
   PullQuote,
   Press,
+  Video,
 };
 
 export function generateStaticParams() {
