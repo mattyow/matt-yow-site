@@ -1,142 +1,80 @@
-.page {
-  padding: 64px clamp(32px, 6vw, 96px) 96px;
-  max-width: 1280px;
+.article {
+  padding: 32px clamp(32px, 6vw, 96px) 96px;
 }
 
-.eyebrow {
-  font-family: "Umiak Mono", ui-monospace, monospace;
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 160%;
-  margin: 0 0 32px 0;
-}
-
-/* ---------- Hero ---------- */
+/* Hero: title + intro left, meta right */
 .hero {
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 2fr 1fr;
   gap: clamp(40px, 6vw, 96px);
+  margin-bottom: 64px;
   align-items: start;
-  margin-bottom: 96px;
 }
 
-.heroText {
+.heroLeft {
   max-width: 520px;
 }
 
-.subtitle {
-  font-family: "Figure Extended", sans-serif;
-  font-weight: 500;
-  font-size: 36px;
-  line-height: 120%;
-  letter-spacing: 0;
-  font-feature-settings: "ss02";
-  margin: 16px 0 32px 0;
+.intro {
+  font-family: "Triptych Roman", Georgia, serif;
+  font-size: 18px;
+  line-height: 160%;
+  margin: 16px 0 0 0;
 }
 
-.bio p {
-  font-family: "Heldane Text", Georgia, serif;
+.heroRight {
+  padding-top: 8px;
+}
+
+.meta {
+  margin: 0;
+  display: grid;
+  grid-template-columns: auto 1fr;
+  column-gap: 8px;
+  row-gap: 0;
+  font-family: "Triptych Roman", Georgia, serif;
+  font-size: 12px;
+  line-height: 160%;
+}
+.meta dt {
+  margin: 0;
+}
+.meta dd {
+  margin: 0;
+}
+
+/* Body content */
+.body {
+  margin-bottom: 96px;
+}
+
+.body :global(p) {
+  font-family: "Triptych Roman", Georgia, serif;
   font-weight: 400;
   font-size: 18px;
   line-height: 160%;
   margin: 0 0 16px 0;
-  text-indent: 2em;
-  font-variant-numeric: oldstyle-nums;
+  max-width: 600px;
 }
 
-.link {
-  text-decoration: underline;
-  text-underline-offset: 3px;
-  text-decoration-thickness: 1px;
-  color: inherit;
-}
-
-.ctaWrap {
-  margin-top: 32px;
-}
-
-.portrait {
-  aspect-ratio: 1 / 1;
-  width: 100%;
-  background: var(--soft);
-  border-radius: 24px;
-  overflow: hidden;
-}
-.portrait img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  display: block;
-}
-
-/* ---------- Two-column sections ---------- */
-.twoCol {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: clamp(40px, 6vw, 96px);
-  margin-bottom: 96px;
-}
-.twoCol:last-of-type {
-  margin-bottom: 0;
-}
-
-.sectionHeading {
-  font-family: "Figure Extended", sans-serif;
-  font-weight: 500;
-  font-size: 36px;
+.body :global(h2),
+.body :global(h3) {
+  font-family: "Triptych Grotesque", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
   line-height: 120%;
-  letter-spacing: 0;
-  font-feature-settings: "ss02";
-  margin: 0 0 32px 0;
+  text-transform: uppercase;
+  margin: 48px 0 16px 0;
+  max-width: 600px;
 }
 
-.list {
-  list-style: none;
-  padding: 0;
-  margin: 0;
+.ctaSection {
+  margin-bottom: 32px;
 }
 
-.listItem {
-  font-family: "Heldane Text", Georgia, serif;
-  font-weight: 400;
-  font-size: 18px;
-  line-height: 160%;
-  margin-bottom: 24px;
-  font-variant-numeric: oldstyle-nums;
-}
-
-.education {
-  margin-top: 16px;
-}
-
-.italic {
-  font-style: italic;
-}
-
-.simpleItem {
-  font-family: "Heldane Text", Georgia, serif;
-  font-weight: 400;
-  font-size: 18px;
-  line-height: 160%;
-  font-variant-numeric: oldstyle-nums;
-}
-
-.colophonBody {
-  font-family: "Heldane Text", Georgia, serif;
-  font-weight: 400;
-  font-size: 18px;
-  line-height: 160%;
-  margin: 0;
-  font-variant-numeric: oldstyle-nums;
-}
-
-/* ---------- Responsive ---------- */
-@media (max-width: 900px) {
-  .hero,
-  .twoCol {
+@media (max-width: 700px) {
+  .hero {
     grid-template-columns: 1fr;
-  }
-  .portrait {
-    max-width: 520px;
+    gap: 32px;
   }
 }
