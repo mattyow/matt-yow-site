@@ -10,7 +10,7 @@ const NAV = [
 export default function TopNav() {
   return (
     <header className={styles.header}>
-      <Link href="/" className={styles.wordmark}>
+      <Link href="/" className={`${styles.wordmark} plain`}>
         Matt Yow
       </Link>
       <nav className={styles.nav} aria-label="Primary">

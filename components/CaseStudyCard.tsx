@@ -11,7 +11,7 @@ export default function CaseStudyCard({
   cover?: string;
 }) {
   return (
-    <Link href={`/work/${slug}`} className={styles.card}>
+    <Link href={`/work/${slug}`} className={`${styles.card} plain`}>
       <div className={styles.imageWrap}>
         {cover && (
           // eslint-disable-next-line @next/next/no-img-element

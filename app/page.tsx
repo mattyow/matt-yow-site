@@ -98,7 +98,7 @@ export default function HomePage() {
           ))}
         </div>
         <div className={styles.viewAllRow}>
-          <Link href="/work" className={styles.viewAllPill}>
+          <Link href="/work" className={`${styles.viewAllPill} plain`}>
             View all projects
           </Link>
         </div>
