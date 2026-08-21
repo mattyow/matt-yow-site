@@ -11,7 +11,7 @@
 
 /* Column-width figure: stays within text column */
 .size_col {
-  max-width: 760px;
+  max-width: 600px;
 }
 
 /* Wide: stretches beyond the text column */
@@ -19,8 +19,8 @@
   max-width: 1200px;
 }
 
-/* Bleed: edge to edge (relative to the page container) */
+/* Bleed: browser-edge, capped for very large displays */
 .size_bleed {
-  max-width: none;
+  max-width: 1800px;
   width: 100%;
 }
