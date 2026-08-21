@@ -33,7 +33,7 @@ export default function RootLayout({
               style={{
                 borderTop: "1px solid var(--ink)",
                 padding: "32px 0",
-                fontFamily: '"Umiak Mono", ui-monospace, monospace',
+                fontFamily: '"Triptych Roman", Georgia, serif',
                 fontSize: 14,
                 lineHeight: 1.6,
               }}
