@@ -21,6 +21,7 @@ export default function RootLayout({
     <html lang="en">
       <body>
         <CursorBlend />
+        <ExternalLinks />
         <div
           style={{
             minHeight: "100vh",
