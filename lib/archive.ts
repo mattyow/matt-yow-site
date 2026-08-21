@@ -11,6 +11,7 @@ export type ArchiveEntry = {
   year?: string;
   agency?: string;
   services?: string;
+  blurb?: string;
   order?: number;
   body: string;
 };
@@ -22,13 +23,14 @@ export function getArchiveEntry(slug: string): ArchiveEntry | null {
   const raw = fs.readFileSync(filePath, "utf8");
   const { data, content } = matter(raw);
 
-  return {
+   return {
     slug,
     title: data.title ?? slug,
     cover: data.cover,
     year: data.year,
     agency: data.agency,
     services: data.services,
+    blurb: data.blurb,
     order: data.order,
     body: content,
   };
