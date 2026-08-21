@@ -57,17 +57,16 @@ body {
 
 a {
   color: inherit;
-  text-decoration: underline;
-  text-decoration-thickness: 4px;
-  text-underline-offset: 0px;
-  text-decoration-color: var(--accent);
-  text-decoration-skip-ink: none;
-  transition: text-decoration-thickness 0.15s ease,
-    text-underline-offset 0.15s ease;
+  text-decoration: none;
+  background-image: linear-gradient(var(--accent), var(--accent));
+  background-repeat: no-repeat;
+  background-position: 0 100%;
+  background-size: 100% 4px;
+  padding-bottom: 2px;
+  transition: background-size 0.35s ease;
 }
 a:hover {
-  text-decoration-thickness: 6px;
-  text-underline-offset: -2px;
+  background-size: 100% 6px;
 }
 
 /* ---------- Type utility classes ---------- */

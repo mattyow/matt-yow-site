@@ -2,10 +2,9 @@
   display: block;
   text-decoration: none;
   color: var(--ink);
-  transition: opacity 0.18s ease;
 }
-.card:hover {
-  opacity: 0.85;
+.card:hover .imageWrap img {
+  transform: scale(1.03);
 }
 
 .imageWrap {
@@ -21,6 +20,7 @@
   height: 100%;
   object-fit: cover;
   display: block;
+  transition: transform 0.35s ease;
 }
 
 .title {
