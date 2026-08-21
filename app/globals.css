@@ -61,6 +61,7 @@ a {
   text-decoration-thickness: 4px;
   text-underline-offset: 0px;
   text-decoration-color: var(--accent);
+  text-decoration-skip-ink: none;
   transition: text-decoration-thickness 0.15s ease,
     text-underline-offset 0.15s ease;
 }

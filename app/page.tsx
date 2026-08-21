@@ -24,7 +24,7 @@ const EDUCATION = {
 const CLIENTS = [
   "Adobe", "Apple", "BambooHR", "Chick-fil-A", "Hewlett-Packard",
   "Intercom", "Lyft", "Microsoft", "Monotype", "Red Antler",
-  "The Savannah College of Art and Design", "SeatGeek", "Tiny Wins", "Treehouse",
+  "SeatGeek", "The Savannah College of Art and Design", "Tiny Wins", "Treehouse",
   "University of California Berkeley",
 ];
 

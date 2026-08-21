@@ -13,10 +13,7 @@ export default function WorkIndex() {
     <div className={styles.page}>
       <h2 className="h2">Projects</h2>
       <p className={styles.intro}>
-        With over 15 years of experience, I&rsquo;ve integrated with teams of all
-        sizes — from startups to publicly traded companies, from internal teams
-        to an array of contractors. My focus is on core brand design systems
-        with a deep regard to powerful brand strategy.
+        Large, small, full-time, freelance, all of it.
       </p>
 
       <div className={styles.grid}>
@@ -30,13 +27,9 @@ export default function WorkIndex() {
         ))}
       </div>
 
-      <div className={styles.archiveLinkRow}>
-        <Link href="/archive" className={styles.archivePill}>
-          View Full Archive
-        </Link>
+      <div className={styles.ctaSection}>
+        <AvailabilityCTA />
       </div>
-
-      <AvailabilityCTA />
     </div>
   );
 }
