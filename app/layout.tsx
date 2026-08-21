@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import TopNav from "@/components/TopNav";
 import "./globals.css";
 import CursorBlend from "@/components/CursorBlend";
+import ExternalLinks from "@/components/ExternalLinks";
 
 export const metadata: Metadata = {
   title: {
