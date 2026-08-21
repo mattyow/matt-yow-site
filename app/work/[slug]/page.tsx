@@ -1,11 +1,10 @@
 import { notFound } from "next/navigation";
 import { MDXRemote } from "next-mdx-remote/rsc";
-import Crumbs from "@/components/Crumbs";
 import Figure from "@/components/Figure";
 import TwoUp from "@/components/TwoUp";
 import PullQuote from "@/components/PullQuote";
 import Press from "@/components/Press";
-import BackPill from "@/components/BackPill";
+import AvailabilityCTA from "@/components/AvailabilityCTA";
 import {
   getAllSlugs,
   getCaseStudy,
@@ -44,37 +43,33 @@ export default async function CaseStudyPage({
 
   return (
     <article className={styles.article}>
-      <nav className={styles.crumbsRow}>
-        <Crumbs
-          crumbs={[
-            { label: "Home", href: "/" },
-            { label: "Projects", href: "/work" },
-            { label: cs.title },
-          ]}
-        />
-      </nav>
-
       <header className={styles.hero}>
-        <h1 className="h1">{cs.title}</h1>
-        <div className={styles.meta}>
-          {cs.year && (
-            <div className={styles.row}>
-              <span className={styles.k}>Year:</span>
-              {cs.year}
-            </div>
-          )}
-          {cs.agency && (
-            <div className={styles.row}>
-              <span className={styles.k}>Agency:</span>
-              {cs.agency}
-            </div>
-          )}
-          {cs.services && (
-            <div className={styles.row}>
-              <span className={styles.k}>Services:</span>
-              {cs.services}
-            </div>
-          )}
+        <div className={styles.heroLeft}>
+          <h1 className="h1">{cs.title}</h1>
+          {cs.blurb && <p className={styles.intro}>{cs.blurb}</p>}
+        </div>
+
+        <div className={styles.heroRight}>
+          <dl className={styles.meta}>
+            {cs.year && (
+              <>
+                <dt>Year:</dt>
+                <dd>{cs.year}</dd>
+              </>
+            )}
+            {cs.agency && (
+              <>
+                <dt>Agency:</dt>
+                <dd>{cs.agency}</dd>
+              </>
+            )}
+            {cs.services && (
+              <>
+                <dt>Notes:</dt>
+                <dd>{cs.services}</dd>
+              </>
+            )}
+          </dl>
         </div>
       </header>
 
@@ -82,7 +77,9 @@ export default async function CaseStudyPage({
         <MDXRemote source={cs.body} components={mdxComponents} />
       </div>
 
-      <BackPill href="/work" label="Back" />
+      <div className={styles.ctaSection}>
+        <AvailabilityCTA />
+      </div>
     </article>
   );
 }
