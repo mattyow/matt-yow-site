@@ -52,17 +52,22 @@
 .viewAllPill {
   display: inline-flex;
   align-items: center;
-  padding: 10px 18px;
+  padding: 8px 18px;
   border: 1px solid var(--ink);
   border-radius: 999px;
-  text-decoration: none;
-  font-family: "Triptych Grotesque", sans-serif;
+  font-family: "Triptych Roman", Georgia, serif;
   font-weight: 400;
-  font-size: 16px;
-  line-height: 120%;
+  font-size: 15px;
+  line-height: 1;
   color: var(--ink);
   background: transparent;
+  text-decoration: none;
   transition: background 0.15s ease;
+  font-variant-numeric: oldstyle-nums;
+  cursor: pointer;
+  appearance: none;
+  -webkit-appearance: none;
+  margin: 0;
 }
 .viewAllPill:hover {
   background: var(--soft);

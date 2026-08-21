@@ -8,7 +8,7 @@ export default function AvailabilityCTA() {
       <span className={styles.text}>
         I am available for contract work — or say hello!
       </span>
-      <CopyEmailPill defaultLabel="Email me" className={styles.pill} />
+      <CopyEmailPill defaultLabel="Contact" className={styles.pill} />
     </div>
   );
 }
