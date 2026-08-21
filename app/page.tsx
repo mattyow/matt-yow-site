@@ -38,7 +38,6 @@ export default function HomePage() {
     <div className={styles.page}>
       <section className={styles.hero}>
         <div className={styles.heroText}>
-          <p className={styles.eyebrow}>Index</p>
           <h1 className="h1">Hello</h1>
 
           <div className={styles.bio}>

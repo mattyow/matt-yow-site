@@ -11,8 +11,7 @@ export default function WorkIndex() {
 
   return (
     <div className={styles.page}>
-      <p className={styles.eyebrow}>Projects</p>
-
+      <h2 className="h2">Projects</h2>
       <p className={styles.intro}>
         With over 15 years of experience, I&rsquo;ve integrated with teams of all
         sizes — from startups to publicly traded companies, from internal teams
