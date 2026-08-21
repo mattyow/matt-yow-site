@@ -11,11 +11,14 @@ export default function CaseStudyCard({
   cover?: string;
 }) {
   return (
-    <Link href={`/work/${slug}`} className={styles.card} aria-label={title}>
-      {cover && (
-        // eslint-disable-next-line @next/next/no-img-element
-        <img src={cover} alt={title} />
-      )}
+    <Link href={`/work/${slug}`} className={styles.card}>
+      <div className={styles.imageWrap}>
+        {cover && (
+          // eslint-disable-next-line @next/next/no-img-element
+          <img src={cover} alt="" />
+        )}
+      </div>
+      <div className={styles.title}>{title}</div>
     </Link>
   );
 }

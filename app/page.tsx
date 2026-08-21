@@ -1,4 +1,7 @@
+import Link from "next/link";
 import AvailabilityCTA from "@/components/AvailabilityCTA";
+import CaseStudyCard from "@/components/CaseStudyCard";
+import { getAllCaseStudies } from "@/lib/case-studies";
 import styles from "./page.module.css";
 
 const EXPERIENCE = [
@@ -15,13 +18,13 @@ const EXPERIENCE = [
 const EDUCATION = {
   company: "Savannah College of Art and Design",
   dates: "2015",
-  role: "Bachelor's of Fine Arts, Graphic Design",
+  role: "Bachelor’s of Fine Arts, Graphic Design",
 };
 
 const CLIENTS = [
   "Adobe", "Apple", "BambooHR", "Chick-fil-A", "Hewlett-Packard",
   "Intercom", "Lyft", "Microsoft", "Monotype", "Red Antler",
-  "SCAD", "SeatGeek", "Tiny Wins", "Treehouse",
+  "The Savannah College of Art and Design", "SeatGeek", "Tiny Wins", "Treehouse",
   "University of California Berkeley",
 ];
 
@@ -34,83 +37,109 @@ const SOCIAL = [
 ];
 
 export default function HomePage() {
+  const featured = getAllCaseStudies().slice(0, 4);
+
   return (
     <div className={styles.page}>
-      <section className={styles.hero}>
-        <div className={styles.heroText}>
-          <h1 className="h1">Hello</h1>
-
-          <div className={styles.bio}>
-            <p>
-              With over 15 years of experience, I&rsquo;ve integrated with teams
-              of all sizes — from startups to publicly traded companies, from
-              internal teams to an array of contractors. My focus is on core
-              brand design systems with a deep regard to powerful brand
-              strategy.
-            </p>
-            <p>
-              Currently I am <em>Staff Brand Designer</em> at Netlify.
-            </p>
-            <p>I live in Richmond, Virginia.</p>
-            <p>
-              Take a look at{" "}
-              <a href="#" className={styles.link}>
-                my home library
-              </a>{" "}
-              minisite.
-            </p>
-          </div>
-
-          <div className={styles.ctaWrap}>
-            <AvailabilityCTA />
-          </div>
-        </div>
-
-        <div className={styles.graphic}>
-          {/* eslint-disable-next-line @next/next/no-img-element */}
-          <img src="/images/matt-icon.svg" alt="" />
+      {/* Hero / Index */}
+      <section className={styles.narrow}>
+        <h2 className="h2">Index</h2>
+        <div className={styles.bio}>
+          <p>
+            With over 15 years of experience, I&rsquo;ve integrated with teams
+            of all sizes — from startups to publicly traded companies, from
+            internal teams to an array of contractors. My focus is on core
+            brand design systems with a deep regard for powerful brand
+            strategy.
+          </p>
+          <p>
+            Currently, I am <em>Staff Brand Designer</em> at Netlify.
+          </p>
+          <p>I live in Richmond, Virginia.</p>
         </div>
       </section>
 
+      {/* Recently */}
+      <section className={styles.narrow}>
+        <h2 className="h2">Recently</h2>
+        <ul className={styles.recentlyList}>
+          <li>
+            I built an app to catalog <a href="https://matt-yows-books.netlify.app/">my home library</a>.
+          </li>
+          <li>
+            In an effort to <em>customize everything</em>, I also built a site
+            to track books I want to buy. It is <a href="https://to-buy-and-be-read.netlify.app/">To Buy and Be Read</a>.
+          </li>
+          <li>
+            I made an <a href="https://baseball-daily.netlify.app/">Out of Town Scoreboard</a> for today&rsquo;s
+            MLB games (&ldquo;today&rdquo; only).
+          </li>
+          <li>
+            Launched <a href="https://axis.run/">axis.run</a>, Netlify&rsquo;s agentic
+            experience scoring system (AXIS)
+          </li>
+          <li>
+            I published a font, <a href="https://ghost-byte.netlify.app/">Ghost Byte</a>.
+          </li>
+        </ul>
+      </section>
+
+      {/* Featured Work */}
+      <section className={styles.section}>
+        <h2 className="h2">Featured Work</h2>
+        <div className={styles.featuredGrid}>
+          {featured.map((cs) => (
+            <CaseStudyCard
+              key={cs.slug}
+              slug={cs.slug}
+              title={cs.title}
+              cover={cs.cover}
+            />
+          ))}
+        </div>
+        <div className={styles.viewAllRow}>
+          <Link href="/work" className={styles.viewAllPill}>
+            View all projects
+          </Link>
+        </div>
+      </section>
+
+      {/* Experience + Clients */}
       <section className={styles.twoCol}>
         <div>
-          <h2 className={styles.sectionHeading}>Experience</h2>
-          <ul className={styles.list}>
+          <h2 className="h2">Experience</h2>
+          <ul className={styles.expList}>
             {EXPERIENCE.map((job, i) => (
-              <li key={i} className={styles.listItem}>
+              <li key={i}>
                 <div>{job.company}, {job.dates}</div>
-                <div className={styles.italic}>{job.role}</div>
+                <div><em>{job.role}</em></div>
               </li>
             ))}
-            <li className={`${styles.listItem} ${styles.education}`}>
+            <li className={styles.education}>
               <div>{EDUCATION.company}, {EDUCATION.dates}</div>
-              <div className={styles.italic}>{EDUCATION.role}</div>
+              <div><em>{EDUCATION.role}</em></div>
             </li>
           </ul>
         </div>
 
         <div>
-          <h2 className={styles.sectionHeading}>Clients &amp; Collaborators</h2>
-          <ul className={styles.list}>
+          <h2 className="h2">Clients &amp; Collaborators</h2>
+          <ul className={styles.simpleList}>
             {CLIENTS.map((client, i) => (
-              <li key={i} className={styles.simpleItem}>{client}</li>
+              <li key={i}>{client}</li>
             ))}
           </ul>
         </div>
       </section>
 
+      {/* Elsewhere + Colophon */}
       <section className={styles.twoCol}>
         <div>
-          <h2 className={styles.sectionHeading}>Elsewhere</h2>
-          <ul className={styles.list}>
+          <h2 className="h2">Elsewhere</h2>
+          <ul className={styles.simpleList}>
             {SOCIAL.map((s, i) => (
-              <li key={i} className={styles.simpleItem}>
-                <a
-                  href={s.href}
-                  className={styles.link}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
+              <li key={i}>
+                <a href={s.href} target="_blank" rel="noopener noreferrer">
                   {s.label}
                 </a>
               </li>
@@ -119,13 +148,16 @@ export default function HomePage() {
         </div>
 
         <div>
-          <h2 className={styles.sectionHeading}>Colophon</h2>
+          <h2 className="h2">Colophon</h2>
           <p className={styles.colophonBody}>
-            Typography: Figure by Fort Foundry, Heldane Text by Klim Type
-            Foundry, and Umiak Mono by East of Rome. Deployed from GitHub with
-            Next.js, hosted on Netlify.
+            Typography is Triptych by the Pyte Foundry. Deployed from GitHub with Next.js, hosted on Netlify.
           </p>
         </div>
+      </section>
+
+      {/* CTA */}
+      <section className={styles.ctaSection}>
+        <AvailabilityCTA />
       </section>
     </div>
   );
