@@ -47,7 +47,7 @@
 /* Body content */
 .body {
   margin-bottom: 96px;
-  max-width: 520px;
+  max-width: 600px;
 }
 
 .body :global(p) {
