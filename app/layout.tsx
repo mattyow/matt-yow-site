@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import TopNav from "@/components/TopNav";
 import "./globals.css";
+import CursorBlend from "@/components/CursorBlend";
 
 export const metadata: Metadata = {
   title: {
@@ -19,6 +20,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body>
+        <CursorBlend />
         <div
           style={{
             minHeight: "100vh",
