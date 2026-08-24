@@ -1,0 +1,30 @@
+.widget {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  font-family: "Triptych Roman", Georgia, serif;
+  font-size: 14px;
+  line-height: 1.6;
+  color: var(--ink);
+  text-decoration: none;
+  background: none;
+}
+.widget:hover .text {
+  text-decoration: underline;
+  text-decoration-thickness: 1px;
+  text-underline-offset: 3px;
+}
+
+.pulse {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: var(--accent);
+  flex-shrink: 0;
+  animation: pulse 1.6s ease-in-out infinite;
+}
+
+@keyframes pulse {
+  0%, 100% { opacity: 0.4; }
+  50% { opacity: 1; }
+}
