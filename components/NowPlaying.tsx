@@ -29,7 +29,7 @@ export default function NowPlaying() {
     }
 
     fetchTrack();
-    const interval = setInterval(fetchTrack, 30000); // every 30s
+    const interval = setInterval(fetchTrack, 30000);
 
     return () => {
       cancelled = true;
@@ -40,7 +40,7 @@ export default function NowPlaying() {
   if (!track) return null;
 
   return (
-    
+    <a
       href={track.url}
       target="_blank"
       rel="noopener noreferrer"
