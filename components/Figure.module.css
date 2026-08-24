@@ -9,18 +9,21 @@
   margin-top: 10px;
 }
 
-/* Column-width figure: stays within text column */
+/* Column-width: stays within text column (600px) */
 .size_col {
   max-width: 600px;
 }
 
-/* Wide: stretches beyond the text column */
+/* Wide: breaks past parent padding, caps at 1200px, centers */
 .size_wide {
-  max-width: 1200px;
+  width: min(1200px, 100vw);
+  margin-left: calc(50% - min(600px, 50vw));
+  max-width: none;
 }
 
-/* Bleed: browser-edge, capped for very large displays */
+/* Bleed: caps at 1800px */
 .size_bleed {
-  max-width: 1800px;
-  width: 100%;
+  width: min(1800px, 100vw);
+  margin-left: calc(50% - min(900px, 50vw));
+  max-width: none;
 }

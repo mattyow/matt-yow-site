@@ -1,6 +1,9 @@
 .twoup {
-  max-width: 1200px;
-  margin: 64px 0;
+  width: min(1200px, 100vw);
+  margin-left: calc(50% - min(600px, 50vw));
+  max-width: none;
+  margin-top: 64px;
+  margin-bottom: 64px;
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 24px;
@@ -8,6 +11,8 @@
 .twoup > figure {
   margin: 0;
   max-width: none;
+  width: 100%;
+  margin-left: 0;
 }
 
 @media (max-width: 700px) {
