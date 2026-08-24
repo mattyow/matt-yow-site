@@ -48,7 +48,7 @@ export default function NowPlaying() {
     >
       <span className={styles.pulse} aria-hidden="true" />
       <span className={styles.text}>
-        {track.artist} — {track.name}
+       Now Playing: {track.artist} — {track.name}
       </span>
     </a>
   );
