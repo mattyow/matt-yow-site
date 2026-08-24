@@ -11,12 +11,11 @@
 }
 
 .size_col {
-  max-width: 520px;
+  max-width: 600px;
 }
 .size_wide {
   max-width: 1200px;
 }
 .size_bleed {
-  max-width: none;
-  width: 100%;
+  max-width: 1800px;
 }

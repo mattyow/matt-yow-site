@@ -4,26 +4,21 @@
 .figure img {
   width: 100%;
   height: auto;
+  display: block;
 }
 .figure figcaption {
   margin-top: 10px;
 }
 
-/* Column-width: stays within text column (600px) */
+/* All sizes left-align to article edge. Cap width only. */
 .size_col {
   max-width: 600px;
 }
 
-/* Wide: breaks past parent padding, caps at 1200px, centers */
 .size_wide {
-  width: min(1200px, 100vw);
-  margin-left: calc(50% - min(600px, 50vw));
-  max-width: none;
+  max-width: 1200px;
 }
 
-/* Bleed: caps at 1800px */
 .size_bleed {
-  width: min(1800px, 100vw);
-  margin-left: calc(50% - min(900px, 50vw));
-  max-width: none;
+  max-width: 1800px;
 }
