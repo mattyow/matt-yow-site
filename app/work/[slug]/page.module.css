@@ -60,11 +60,11 @@
 
 .body :global(h2),
 .body :global(h3) {
-  font-family: "Triptych Grotesque", sans-serif;
+  font-family: "Triptych Roman", Georgia, serif;
   font-weight: 400;
-  font-size: 16px;
+  font-size: 28px;
   line-height: 120%;
-  text-transform: uppercase;
+  text-transform: none;
   margin: 48px 0 16px 0;
   max-width: 600px;
 }
