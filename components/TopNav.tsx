@@ -15,7 +15,7 @@ export default function TopNav() {
       </Link>
       <nav className={styles.nav} aria-label="Primary">
         {NAV.map(({ label, href }) => (
-          <Link key={label} href={href} className={styles.pill}>
+          <Link key={label} href={href} className={`${styles.pill} plain`}>
             {label}
           </Link>
         ))}
