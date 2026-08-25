@@ -33,6 +33,10 @@
   margin: 0;
 }
 
+.recentlyBlock {
+  margin-top: 48px;
+}
+
 /* Featured Work */
 .section {
   margin-bottom: 96px;
