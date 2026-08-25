@@ -3,6 +3,7 @@ import AvailabilityCTA from "@/components/AvailabilityCTA";
 import CaseStudyCard from "@/components/CaseStudyCard";
 import { getAllCaseStudies } from "@/lib/case-studies";
 import styles from "./page.module.css";
+import DitherLogo from "@/components/DitherLogo";
 
 const EXPERIENCE = [
   { company: "Netlify", dates: "2025–current", role: "Staff Brand Designer" },
@@ -42,20 +43,25 @@ export default function HomePage() {
   return (
     <div className={styles.page}>
       {/* Hero / Index */}
-      <section className={styles.narrow}>
-        <h2 className="h2">Index</h2>
-        <div className={styles.bio}>
-          <p>
-            With over 15 years of experience, I&rsquo;ve integrated with teams
-            of all sizes — from startups to publicly traded companies, from
-            internal teams to an array of contractors. My focus is on core
-            brand design systems with a deep regard for powerful brand
-            strategy.
-          </p>
-          <p>
-            Currently, I am <em>Staff Brand Designer</em> at Netlify.
-          </p>
-          <p>I live in Richmond, Virginia.</p>
+      <section className={styles.hero}>
+        <div className={styles.heroText}>
+          <h2 className="h2">Index</h2>
+          <div className={styles.bio}>
+            <p>
+              With over 15 years of experience, I&rsquo;ve integrated with teams
+              of all sizes — from startups to publicly traded companies, from
+              internal teams to an array of contractors. My focus is on core
+              brand design systems with a deep regard for powerful brand
+              strategy.
+            </p>
+            <p>
+              Currently, I am <em>Staff Brand Designer</em> at Netlify.
+            </p>
+            <p>I live in Richmond, Virginia.</p>
+          </div>
+        </div>
+        <div className={styles.graphic}>
+          <DitherLogo />
         </div>
       </section>
 

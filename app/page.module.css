@@ -132,3 +132,32 @@
     grid-template-columns: 1fr;
   }
 }
+
+.hero {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: clamp(40px, 6vw, 96px);
+  align-items: start;
+  margin-bottom: 96px;
+}
+
+.heroText {
+  max-width: 520px;
+}
+
+.graphic {
+  width: 100%;
+  max-width: 400px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+@media (max-width: 900px) {
+  .hero {
+    grid-template-columns: 1fr;
+  }
+  .graphic {
+    max-width: 300px;
+  }
+}
