@@ -10,7 +10,7 @@ const CFG = {
   strength: 2,
   spring: 0.02,
   friction: 0.85,
-  dotSize: 1.5,
+  dotSize: 1.25,
   colorScale: 30, // displacement in px that maps to full color transition
 };
 
