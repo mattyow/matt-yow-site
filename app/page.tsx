@@ -71,15 +71,18 @@ export default function HomePage() {
             to track books I want to buy. It is <a href="https://to-buy-and-be-read.netlify.app/">To Buy and Be Read</a>.
           </li>
           <li>
-            I made an <a href="https://baseball-daily.netlify.app/">Out of Town Scoreboard</a> for today&rsquo;s
-            MLB games (&ldquo;today&rdquo; only).
-          </li>
-          <li>
             Launched <a href="https://axis.run/">axis.run</a>, Netlify&rsquo;s agentic
             experience scoring system (AXIS)
           </li>
           <li>
-            I published a font, <a href="https://ghost-byte.netlify.app/">Ghost Byte</a>.
+            I published a font, <a href="https://ghost-byte.netlify.app/">Ghost Byte</a>. It’s free.
+          </li>
+          <li>
+            I made an <a href="https://baseball-daily.netlify.app/">Out of Town Scoreboard</a> for today&rsquo;s
+            MLB games (&ldquo;today&rdquo; only) that uses Ghost Byte.
+          </li>
+           <li>
+            Lettering for a shirt for Counter, a brand and type studio in Orlando. <a href="https://thisiscounter.com/claritee">See it here</a>.
           </li>
         </ul>
       </section>
