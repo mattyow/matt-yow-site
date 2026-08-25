@@ -159,7 +159,9 @@ export default function HomePage() {
         <div>
           <h2 className="h2">Colophon</h2>
           <p className={styles.colophonBody}>
-            Typography is Triptych by The Pyte Foundry. Site built by me. All errors are intentional.
+            Typography is Triptych by The Pyte Foundry. 
+            Site built by me. 
+            All errors are intentional.
           </p>
         </div>
       </section>
