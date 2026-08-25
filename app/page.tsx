@@ -42,7 +42,7 @@ export default function HomePage() {
 
   return (
     <div className={styles.page}>
-      {/* Hero / Index */}
+      {/* Hero / Index + Recently */}
       <section className={styles.hero}>
         <div className={styles.heroText}>
           <h2 className="h2">Index</h2>
@@ -59,38 +59,38 @@ export default function HomePage() {
             </p>
             <p>I live in Richmond, Virginia.</p>
           </div>
+
+          <div className={styles.recentlyBlock}>
+            <h2 className="h2">Recently</h2>
+            <ul className={styles.recentlyList}>
+              <li>
+                I built an app to catalog <a href="https://matt-yows-books.netlify.app/">my home library</a>.
+              </li>
+              <li>
+                In an effort to <em>customize everything</em>, I also built a site
+                to track books I want to buy. It is <a href="https://to-buy-and-be-read.netlify.app/">To Buy and Be Read</a>.
+              </li>
+              <li>
+                Launched <a href="https://axis.run/">axis.run</a>, Netlify&rsquo;s agentic
+                experience scoring system (AXIS)
+              </li>
+              <li>
+                I published a font, <a href="https://ghost-byte.netlify.app/">Ghost Byte</a>. It&rsquo;s free.
+              </li>
+              <li>
+                I made an <a href="https://baseball-daily.netlify.app/">Out of Town Scoreboard</a> for today&rsquo;s
+                MLB games (&ldquo;today&rdquo; only) that uses Ghost Byte.
+              </li>
+              <li>
+                Lettering for a shirt for Counter, a brand and type studio in Orlando. <a href="https://thisiscounter.com/claritee">See it here</a>.
+              </li>
+            </ul>
+          </div>
         </div>
+
         <div className={styles.graphic}>
           <DitherLogo />
         </div>
-      </section>
-
-      {/* Recently */}
-      <section className={styles.narrow}>
-        <h2 className="h2">Recently</h2>
-        <ul className={styles.recentlyList}>
-          <li>
-            I built an app to catalog <a href="https://matt-yows-books.netlify.app/">my home library</a>.
-          </li>
-          <li>
-            In an effort to <em>customize everything</em>, I also built a site
-            to track books I want to buy. It is <a href="https://to-buy-and-be-read.netlify.app/">To Buy and Be Read</a>.
-          </li>
-          <li>
-            Launched <a href="https://axis.run/">axis.run</a>, Netlify&rsquo;s agentic
-            experience scoring system (AXIS)
-          </li>
-          <li>
-            I published a font, <a href="https://ghost-byte.netlify.app/">Ghost Byte</a>. It’s free.
-          </li>
-          <li>
-            I made an <a href="https://baseball-daily.netlify.app/">Out of Town Scoreboard</a> for today&rsquo;s
-            MLB games (&ldquo;today&rdquo; only) that uses Ghost Byte.
-          </li>
-           <li>
-            Lettering for a shirt for Counter, a brand and type studio in Orlando. <a href="https://thisiscounter.com/claritee">See it here</a>.
-          </li>
-        </ul>
       </section>
 
       {/* Featured Work */}
