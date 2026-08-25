@@ -5,12 +5,12 @@ import styles from "./DitherLogo.module.css";
 
 // Physics config — matches Matt's tuned values
 const CFG = {
-  spacing: 5,
+  spacing: 4,
   radius: 40,
   strength: 2,
   spring: 0.02,
   friction: 0.85,
-  dotSize: 1,
+  dotSize: 1.8,
   colorScale: 30, // displacement in px that maps to full color transition
 };
 
