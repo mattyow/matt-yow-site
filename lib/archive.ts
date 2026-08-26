@@ -54,8 +54,8 @@ export function getAllArchiveEntries(): ArchiveEntry[] {
   if (a.order !== undefined) return -1;
   if (b.order !== undefined) return 1;
   // Neither has order: sort by year descending (newest first)
-  const ay = parseInt(a.year.split(/\D/)[0] || "0", 10);
-  const by = parseInt(b.year.split(/\D/)[0] || "0", 10);
+const ay = parseInt((a.year ?? "").split(/\D/)[0] || "0", 10);
+const by = parseInt((b.year ?? "").split(/\D/)[0] || "0", 10);
   return by - ay;
 });
 }
