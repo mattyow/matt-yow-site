@@ -1,11 +1,11 @@
 .cta {
   display: flex;
-  align-items: center;
-  flex-wrap: wrap;
+  align-items: baseline;
   gap: 12px;
   font-family: "Triptych Roman", Georgia, serif;
   font-size: 18px;
   line-height: 160%;
+  flex-wrap: wrap;
 }
 
 .dot {
@@ -14,7 +14,10 @@
   height: 10px;
   border-radius: 50%;
   background: var(--accent);
-  flex-shrink: 0;
+  margin-right: 12px;
+  vertical-align: middle;
+  position: relative;
+  top: -1px;
 }
 
 .text {

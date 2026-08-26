@@ -45,3 +45,14 @@
 .pill:hover {
   background: var(--soft);
 }
+
+@media (max-width: 600px) {
+  .header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 16px;
+  }
+  .nav {
+    flex-wrap: nowrap;
+  }
+}
