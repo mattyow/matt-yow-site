@@ -45,11 +45,19 @@ export function getAllArchiveEntries(): ArchiveEntry[] {
     .map((f) => f.replace(/\.mdx$/, ""))
     .map((slug) => getArchiveEntry(slug))
     .filter((e): e is ArchiveEntry => e !== null)
-    .sort((a, b) => {
-      if (a.order !== undefined && b.order !== undefined)
-        return a.order - b.order;
-      return a.title.localeCompare(b.title);
-    });
+.sort((a, b) => {
+  // Both have order: sort by order
+  if (a.order !== undefined && b.order !== undefined) {
+    return a.order - b.order;
+  }
+  // Only one has order: it comes first
+  if (a.order !== undefined) return -1;
+  if (b.order !== undefined) return 1;
+  // Neither has order: sort by year descending (newest first)
+  const ay = parseInt(a.year.split(/\D/)[0] || "0", 10);
+  const by = parseInt(b.year.split(/\D/)[0] || "0", 10);
+  return by - ay;
+});
 }
 
 export function getAllArchiveSlugs(): string[] {
