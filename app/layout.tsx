@@ -12,6 +12,21 @@ export const metadata: Metadata = {
   },
   description:
     "Matt Yow specializes in brand identity, experience, and activation.",
+  metadataBase: new URL("https://mattyow.com"),
+  openGraph: {
+    title: "Matt Yow",
+    description:
+      "Matt Yow specializes in brand identity, experience, and activation.",
+    url: "https://mattyow.com",
+    siteName: "Matt Yow",
+    type: "website",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Matt Yow",
+    description:
+      "Matt Yow specializes in brand identity, experience, and activation.",
+  },
 };
 
 export default function RootLayout({

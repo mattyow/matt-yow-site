@@ -68,7 +68,7 @@ export default function HomePage() {
               </li>
               <li>
                 In an effort to <em>customize everything</em>, I also built a site
-                to track books I want to buy. It is <a href="https://to-buy-and-be-read.netlify.app/">To Buy and Be Read</a>.
+                to track books I want to buy. It is <a href="https://tbbr.netlify.app/">To Buy and Be Read</a>.
               </li>
               <li>
                 Launched <a href="https://axis.run/">axis.run</a>, Netlify&rsquo;s agentic
