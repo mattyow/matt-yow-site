@@ -1,0 +1,59 @@
+.page {
+  padding: 32px clamp(32px, 6vw, 96px) 96px;
+}
+
+.intro {
+  font-family: "Triptych Roman", Georgia, serif;
+  font-size: 18px;
+  line-height: 160%;
+  margin: 24px 0 64px 0;
+  max-width: 520px;
+}
+
+.years {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  max-width: 640px;
+}
+
+.year {
+  margin: 0;
+}
+
+.summary {
+  font-family: "Triptych Roman", Georgia, serif;
+  font-size: 24px;
+  font-weight: 700;
+  cursor: pointer;
+  list-style: none;
+  padding: 8px 0;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+.summary::-webkit-details-marker {
+  display: none;
+}
+.summary::before {
+  content: "▶";
+  display: inline-block;
+  font-size: 12px;
+  transition: transform 0.15s ease;
+}
+.year[open] .summary::before {
+  transform: rotate(90deg);
+}
+
+.list {
+  list-style: decimal;
+  padding-left: 48px;
+  margin: 16px 0 0 0;
+}
+
+.item {
+  font-family: "Triptych Roman", Georgia, serif;
+  font-size: 18px;
+  line-height: 200%;
+  padding-left: 8px;
+}
