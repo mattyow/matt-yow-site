@@ -22,7 +22,8 @@ export default function ReadingListPage() {
             <ol className={styles.list}>
               {yearData.books.map((book, i) => (
                 <li key={i} className={styles.item}>
-                  <em>{book.title}</em> by {book.author}
+                  <em>{book.title}</em>{" "}
+{book.author.startsWith("edited by") ? book.author : `by ${book.author}`}
                 </li>
               ))}
             </ol>
