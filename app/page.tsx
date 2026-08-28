@@ -57,6 +57,9 @@ export default function HomePage() {
             <p>
               Currently, I am <em>Staff Brand Designer</em> at Netlify.
             </p>
+            <p>
+              I&rsquo;ve been tracking my reading list for over a decade. Here is my <a href="/reading">reading list</a>.
+            </p>
             <p>I live in Richmond, Virginia.</p>
           </div>
 
