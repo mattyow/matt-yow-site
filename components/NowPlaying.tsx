@@ -52,7 +52,9 @@ export default function NowPlaying() {
         <img src={track.image} alt="" className={styles.cover} />
       )}
       <span className={styles.text}>
-        Now Playing: {track.artist} — {track.name}
+        <span className={styles.label}>Now Playing:</span>
+        <span className={styles.title}><em>{track.name}</em></span>
+        <span className={styles.artist}>by {track.artist}</span>
       </span>
     </a>
   );
