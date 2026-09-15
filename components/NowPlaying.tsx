@@ -25,7 +25,7 @@ export default function NowPlaying() {
           setTrack(data.playing ? data.track : null);
         }
       } catch {
-        // silently fail — widget just doesn't show
+        // silently fail
       }
     }
 
@@ -40,21 +40,21 @@ export default function NowPlaying() {
 
   if (!track) return null;
 
-return (
-  
-    href={track.url}
-    target="_blank"
-    rel="noopener noreferrer"
-    className={styles.widget}
-  >
-    {track.image && (
-      // eslint-disable-next-line @next/next/no-img-element
-      <img src={track.image} alt="" className={styles.cover} />
-    )}
-    <span className={styles.pulse} aria-hidden="true" />
-    <span className={styles.text}>
-      Now Playing: {track.artist} — {track.name}
-    </span>
-  </a>
-);
+  return (
+    <a
+      href={track.url}
+      target="_blank"
+      rel="noopener noreferrer"
+      className={styles.widget}
+    >
+      {track.image && (
+        // eslint-disable-next-line @next/next/no-img-element
+        <img src={track.image} alt="" className={styles.cover} />
+      )}
+      <span className={styles.pulse} aria-hidden="true" />
+      <span className={styles.text}>
+        Now Playing: {track.artist} — {track.name}
+      </span>
+    </a>
+  );
 }
