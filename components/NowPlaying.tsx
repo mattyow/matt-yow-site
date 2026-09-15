@@ -51,7 +51,6 @@ export default function NowPlaying() {
         // eslint-disable-next-line @next/next/no-img-element
         <img src={track.image} alt="" className={styles.cover} />
       )}
-      <span className={styles.pulse} aria-hidden="true" />
       <span className={styles.text}>
         Now Playing: {track.artist} — {track.name}
       </span>

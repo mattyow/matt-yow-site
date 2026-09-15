@@ -30,8 +30,8 @@
 }
 
 .cover {
-  width: 24px;
-  height: 24px;
+  width: 96px;
+  height: 96px;
   object-fit: cover;
   display: block;
   flex-shrink: 0;
