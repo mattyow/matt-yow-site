@@ -40,6 +40,7 @@ export async function GET() {
         name: track.name,
         artist: track.artist["#text"],
         url: track.url,
+        image: track.image?.find((img: { size: string }) => img.size === "medium")?.["#text"] || null,
       },
     });
   } catch {

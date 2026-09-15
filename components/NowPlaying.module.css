@@ -28,3 +28,11 @@
   0%, 100% { opacity: 0.4; }
   50% { opacity: 1; }
 }
+
+.cover {
+  width: 24px;
+  height: 24px;
+  object-fit: cover;
+  display: block;
+  flex-shrink: 0;
+}
