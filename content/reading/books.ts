@@ -37,6 +37,7 @@ export const READING: YearOfReading[] = [
       { title: "Between Two Fires", author: "Christopher Buehlman" },
       { title: "William Blake and The Sea Monsters of Love", author: "Philip Hoare" },
       { title: "The Island of Last Things", author: "Emma Sloley" },
+      { title: "All the Horses of Iceland", author: "Sarah Tolmie" },
     ],
   },
   {
