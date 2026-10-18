@@ -41,6 +41,7 @@ export const READING: YearOfReading[] = [
       { title: "Pandemonium Waltz", author: "Jeffrey Ford" },
       { title: "Anaximander and the Birth of Science", author: "Carlo Rovelli" },
       { title: "Hellions: Stories", author: "Julia Elliott" },
+    ],
   },
   {
     year: 2025,
