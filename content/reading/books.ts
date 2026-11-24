@@ -42,6 +42,8 @@ export const READING: YearOfReading[] = [
       { title: "Anaximander and the Birth of Science", author: "Carlo Rovelli" },
       { title: "Hellions: Stories", author: "Julia Elliott" },
       { title: "Smoke, Paper, Mirrors", author: "Anna Tambour" },
+      { title: "The Witch", author: "Marie NDiaye" },
+      { title: "Tokyo Express", author: "Seichō Matsumoto" },
     ],
   },
   {
